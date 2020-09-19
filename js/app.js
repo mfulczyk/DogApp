@@ -1,21 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import MainInputs from "./mainComponents/mainInputs"
+import DogManager from "./dogManager/dogManager"
 
 
 
 function App() {
-  return (
-    <div>
-
-      <h1>New task</h1>
-      <MainInputs/>
-      
-    
-    </div>
-
-    
-  )
+  return <DogManager/>
 }
 
 ReactDOM.render(<App/>, document.querySelector("#app"));
