@@ -14,23 +14,19 @@ function dogManager() {
     } 
 
     const fetchAllDogs = () => {
-        fetch('http://localhost:3000/dogs')
+        fetch('http://localhost:3000/dogs/')
             .then(resp => resp.json())
-            .then(allBreeds => setDogBreed([allBreeds]))
+            .then(allBreeds => setDogBreed(allBreeds))
 
-        console.log(dogBreed)
     }
+    
 
-    // setInterval(function(){ console.log(dogBreed) }, 1000);
+
 
 
     return (
         <div>
-            <AddDog addDog={addDog}/>
-            <button onClick={fetchAllDogs}>Fetch</button>
-            <ul>
-                {dogBreed.map(el => <li>Test {el.dogs}</li>)}
-            </ul>
+            <AddDog addDog={addDog} dogProp={dogBreed} />
         </div>
     )
 }

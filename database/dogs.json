@@ -1,10 +1,10 @@
 {
-  "users": [
+  "userDogs": [
     {
       "gówno": 1
     }
   ],
-  "dogs": [
+  "dogs": 
         {
           "affenpinscher": [],
           "african": [],
@@ -208,5 +208,4 @@
               "irish"
           ]
       }
-  ]
 }
