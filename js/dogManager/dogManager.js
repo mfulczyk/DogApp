@@ -1,15 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import AddDog from "../addDog/addDog"
 
 function dogManager() {
 
-    const [dogBreed, setDogBreed] = useState([])
+    const [dogBreed, setDogBreed] = useState([''])
+
+    useEffect(() => {
+        fetchAllDogs()
+    }, [])
 
     const addDog = (dogValues) => {
         console.log(JSON.stringify(dogValues))
     } 
 
-    const fetchAllCars = () => {
+    const fetchAllDogs = () => {
         fetch('http://localhost:3000/dogs')
             .then(resp => resp.json())
             .then(allBreeds => setDogBreed([allBreeds]))
@@ -23,10 +27,9 @@ function dogManager() {
     return (
         <div>
             <AddDog addDog={addDog}/>
-            <button onClick={fetchAllCars}>Fetch</button>
+            <button onClick={fetchAllDogs}>Fetch</button>
             <ul>
-
-                {/* {dogBreed.map(el => <div>Test {el.message}</div>)} */}
+                {dogBreed.map(el => <li>Test {el.dogs}</li>)}
             </ul>
         </div>
     )
