@@ -10,6 +10,7 @@ function addDog({ addDog, dogProp }) {
     const handleSubmit = (e) => {
         e.preventDefault();
         const dogValues = {
+            id: dogProps.name,
             name: dogProps.name,
             race: dogProps.race,
             age: dogProps.age
