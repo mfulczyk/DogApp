@@ -10,7 +10,7 @@ function dogManager() {
 
 
     useEffect(() => {
-        fetchAllDogs()
+        fetchAllDogs(), fetchMyDog()
     }, [])
 
     const addDog = (dogValues) => {
@@ -28,24 +28,24 @@ function dogManager() {
         fetch(API_URL_BREEDS)
             .then(resp => resp.json())
             .then(allBreeds => setDogBreed(allBreeds))
+            console.log(dogBreed)
+        
 
     }
 
-    // const fetchMyDog = () => {
-    //     fetch(API_URL_USERDOGS)
-    //         .then(resp => resp.json())
-    //         .then(dog => setDogBreed(myDog))
+    const fetchMyDog = () => {
+        fetch(API_URL_USERDOGS)
+            .then(resp => resp.json())
+            .then(dog => setMyDog(dog))
 
-        
-        
-    //     console.log(myDog)
-    // }
+        console.log(myDog)
+    }
 
     return (
         <div>
             <AddDog addDog={addDog} dogProp={dogBreed} />
-            <ShowYourDogs/>
-            {/* <button onClick={fetchMyDog}>Mój Pies</button> */}
+            <button onClick={fetchMyDog}  >Moje Psy</button>
+            <ShowYourDogs myDogProp={myDog}/>
         </div>
     )
 }
