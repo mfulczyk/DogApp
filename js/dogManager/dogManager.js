@@ -36,7 +36,13 @@ function dogManager() {
             .then(resp => resp.json())
             .then(dog => setMyDog(dog))
 
-   
+    }
+
+    const fetchDogFood = (id) => {
+        console.log("DELETE DOG WITH ID: ", id)
+        fetch(`http://localhost:3000/userDogs/${id}`, {
+            method: "DELETE"
+        }).then( fetchMyDog )
     }
 
     const deleteDog = (id) => {
@@ -49,7 +55,7 @@ function dogManager() {
     return (
         <div>
             <AddDog addDog={addDog} dogProp={dogBreed} />
-            <button class="btn btn-secondary" onClick={fetchMyDog}  >Moje Psy</button>
+            <button className="btn btn-secondary" onClick={fetchMyDog}  >Moje Psy</button>
             <ShowYourDogs handleDelete={deleteDog} myDogProp={myDog}/>
         </div>
     )

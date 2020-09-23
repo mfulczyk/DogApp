@@ -2,21 +2,45 @@
   "userDogs": [
     {
       "id": 1,
-      "name": "Kokos",
+      "name": "Miki",
       "race": "mix",
-      "age": "0"
+      "age": "0",
+      "food": [
+        {
+          "date": "123",
+          "time": "123",
+          "whatFood": "wet",
+          "howMuch": "123"
+        }
+      ]
     },
     {
       "id": 2,
-      "name": "Miki",
+      "name": "Kokos",
       "race": "mix",
-      "age": "16"
+      "age": "17",
+      "food": [
+        {
+          "date": "",
+          "time": "",
+          "whatFood": "",
+          "howMuch": ""
+        }
+      ]
     },
     {
       "id": 3,
       "name": "Lusia",
       "race": "pekinese",
-      "age": "4"
+      "age": "4",
+      "food": [
+        {
+          "date": "",
+          "time": "",
+          "whatFood": "",
+          "howMuch": ""
+        }
+      ]
     }
   ],
   "dogs": {

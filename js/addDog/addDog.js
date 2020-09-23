@@ -13,7 +13,15 @@ function addDog({ addDog, dogProp }) {
             id: "",
             name: dogProps.name,
             race: dogProps.race,
-            age: dogProps.age
+            age: dogProps.age,
+            food: [
+                {
+                    date: "",
+                    time: "",
+                    whatFood: "",
+                    howMuch: ""
+                }
+            ]
         }
         addDog(dogValues)
     }
@@ -27,7 +35,7 @@ function addDog({ addDog, dogProp }) {
             </select>
 
             <input onChange={e => setDogValues({ ...dogProps, age: e.target.value })} value={dogProps.age} style={{ display: "block" }} type="number" placeholder="Age"></input>
-            <button class="btn btn-success">Add Your Dog!</button>
+            <button className="btn btn-success">Add Your Dog!</button>
         </form>
     </>
 
