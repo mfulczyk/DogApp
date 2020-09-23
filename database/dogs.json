@@ -1,16 +1,22 @@
 {
   "userDogs": [
     {
-      "id": "-2OYVCZ",
+      "id": 1,
       "name": "Kokos",
-      "race": "labrador",
+      "race": "mix",
       "age": "0"
     },
     {
-      "id": "KwYIdij",
+      "id": 2,
       "name": "Miki",
       "race": "mix",
-      "age": "17"
+      "age": "16"
+    },
+    {
+      "id": 3,
+      "name": "Lusia",
+      "race": "pekinese",
+      "age": "4"
     }
   ],
   "dogs": {

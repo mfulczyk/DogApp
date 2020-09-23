@@ -22,15 +22,13 @@ function dogManager() {
                 "Content-Type" : "application/json"
             }
         }).then( fetchAllDogs )
+        .then(  fetchMyDog  )
     } 
 
     const fetchAllDogs = () => {
         fetch(API_URL_BREEDS)
             .then(resp => resp.json())
             .then(allBreeds => setDogBreed(allBreeds))
-            console.log(dogBreed)
-        
-
     }
 
     const fetchMyDog = () => {
@@ -38,14 +36,21 @@ function dogManager() {
             .then(resp => resp.json())
             .then(dog => setMyDog(dog))
 
-        console.log(myDog)
+   
+    }
+
+    const deleteDog = (id) => {
+        console.log("DELETE DOG WITH ID: ", id)
+        fetch(`http://localhost:3000/userDogs/${id}`, {
+            method: "DELETE"
+        }).then( fetchMyDog )
     }
 
     return (
         <div>
             <AddDog addDog={addDog} dogProp={dogBreed} />
-            <button onClick={fetchMyDog}  >Moje Psy</button>
-            <ShowYourDogs myDogProp={myDog}/>
+            <button class="btn btn-secondary" onClick={fetchMyDog}  >Moje Psy</button>
+            <ShowYourDogs handleDelete={deleteDog} myDogProp={myDog}/>
         </div>
     )
 }
