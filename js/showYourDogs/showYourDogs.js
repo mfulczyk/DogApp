@@ -5,25 +5,24 @@ function showYourDogs({ myDogProp, handleDelete }) {
     let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
     let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
 
-    const [food, setFood] = useState({date:"", time: "", whatFood: "", howMuch: ""})
+    const [food, setFood] = useState({whatFood: "", howMuch: ""})
 
-    const handleSubmit = (e) => {
+    const handleDogFoodSubmit = (e) => {
         e.preventDefault();
-        const dogValues = {
-            id: "",
-            name: dogProps.name,
-            race: dogProps.race,
-            age: dogProps.age,
+        const dogFoodValues = {
+
+            id: id,
             food: [
                 {
-                    date: "",
-                    time: "",
-                    whatFood: "",
-                    howMuch: ""
+                    date: date,
+                    time: time,
+                    whatFood: food.whatFood,
+                    howMuch: food.howMuch
                 }
             ]
         }
-        addDog(dogValues)
+        // addDog(dogValues)
+        console.log(dogFoodValues)
     }
 
 return (
@@ -35,13 +34,14 @@ return (
             <p>Dog race: {el.race} </p>
             <button className="btn btn-info">Feed</button>
             <button className="btn btn-danger" onClick={()=> handleDelete(el.id)}>Delete</button>
-            <form onSubmit={handleSubmit}>
-                <select style={{ display: "block" }} type="text" placeholder="Select race">
+            <form onSubmit={handleDogFoodSubmit}>
+                <select onChange={e => setFood({ ...food, whatFood: e.target.value })} style={{ display: "block" }} type="text" placeholder="Select race">
+                    <option defaultValue={"Select your option"} hidden >Select your option</option>
                     <option value="dry dog food">Dry Dog Food</option>
                     <option value="wet dog food">Wet Dog Food</option>
                     <option value="wet dog food">BARF diet</option>
                 </select>
-                <input type="number" placeholder="How many grams?"></input>
+                <input onChange={e => setFood({ ...food, howMuch: e.target.value })}type="number" placeholder="How many grams?"></input>
                 <button className="btn btn-warning" style={{display: "block"}}>Feed the dog!</button>
             </form>
             <h3>{date}</h3>
