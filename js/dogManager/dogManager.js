@@ -43,15 +43,13 @@ function dogManager() {
     const [myTemporaryDog, setMyTempDog] = useState(['']);
 
 
-    const fetchDogFood = ( dogFoodValues  ) => {
+    const fetchDogFood = ( id, dogFoodValues  ) => {
 
-        fetch("http://localhost:3000/userDogs/1")
+        fetch(`http://localhost:3000/userDogs/${id}`)
             .then(resp => resp.json())
             .then(something => setMyTempDog(something))
 
-        console.log(myTemporaryDog)
-
-        fetch(`http://localhost:3000/userDogs/1`, {
+        fetch(`http://localhost:3000/userDogs/${id}`, {
             method: "PATCH",
             body: JSON.stringify({
                 food:{

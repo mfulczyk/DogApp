@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function dogFood({fetchDogFood}) {
+function dogFood({fetchDogFood, testProps}) {
 
     let today = new Date();
     let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
@@ -10,6 +10,9 @@ function dogFood({fetchDogFood}) {
 
     const handleDogFoodSubmit = (e) => {
         e.preventDefault();
+
+        const id = testProps
+
         const dogFoodValues = {
             food: 
                 {
@@ -20,8 +23,8 @@ function dogFood({fetchDogFood}) {
                 }
 
         }
-        console.log(dogFoodValues)
-        fetchDogFood(dogFoodValues)
+
+        fetchDogFood(id, dogFoodValues)
 
     }
     return (

@@ -11,7 +11,7 @@ return (
             <p>Dog age: {el.age}</p> 
             <p>Dog race: {el.race} </p>
             <button className="btn btn-danger" onClick={()=> handleDelete(el.id)}>Delete</button>
-            <DogFood fetchDogFood={fetchDogFood}/>
+            <DogFood testProps={el.id} fetchDogFood={fetchDogFood}/>
         </div>)}
     </div>
 )

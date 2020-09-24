@@ -3,6 +3,9 @@ import ReactDOM from "react-dom";
 import DogManager from "./dogManager/dogManager"
 
 function App() {
+
+  
+
   return (
     <>
       <DogManager />

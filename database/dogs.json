@@ -7,8 +7,20 @@
       "age": "123",
       "food": {
         "date": "2020-9-24",
-        "time": "19:37:20",
+        "time": "21:0:42",
         "whatFood": "wet dog food",
+        "howMuch": "123"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Kokos",
+      "race": "boxer",
+      "age": "123",
+      "food": {
+        "date": "2020-9-24",
+        "time": "21:1:0",
+        "whatFood": "dry dog food",
         "howMuch": "123"
       }
     }
