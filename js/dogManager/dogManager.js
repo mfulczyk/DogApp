@@ -9,6 +9,7 @@ function dogManager() {
     const [myDog, setMyDog] = useState([''])
 
 
+
     useEffect(() => {
         fetchAllDogs(), fetchMyDog()
     }, [])
@@ -38,16 +39,28 @@ function dogManager() {
 
     }
 
-    const fetchDogFood = (id, ) => {
-        fetch(`http://localhost:3000/userDogs/${id}`, {
+
+    const [myTemporaryDog, setMyTempDog] = useState(['']);
+
+
+    const fetchDogFood = ( dogFoodValues  ) => {
+
+        fetch("http://localhost:3000/userDogs/1")
+            .then(resp => resp.json())
+            .then(something => setMyTempDog(something))
+
+        console.log(myTemporaryDog)
+
+        fetch(`http://localhost:3000/userDogs/1`, {
             method: "PATCH",
             body: JSON.stringify({
-                "food": [{
-                    "date": "test",
-                    "time": "test2",
-                    "whatFood": "test3",
-                    "howMuch": "123"
-                }]}),
+                food:{
+                    "date": dogFoodValues.food.date,
+                    "time": dogFoodValues.food.time,
+                    "whatFood": dogFoodValues.food.whatFood,
+                    "howMuch": dogFoodValues.food.howMuch
+                }
+                }),
             headers: {
                 "Content-type": "application/json; charset=UTF-8"
                 }
@@ -66,9 +79,8 @@ function dogManager() {
         <div>
             <AddDog addDog={addDog} dogProp={dogBreed} />
             <button className="btn btn-secondary" onClick={fetchMyDog}  >Moje Psy</button>
-            <ShowYourDogs handleDelete={deleteDog} myDogProp={myDog}/>
+            <ShowYourDogs fetchDogFood={fetchDogFood} handleDelete={deleteDog} myDogProp={myDog}/>
             
-            <button onClick={fetchDogFood}>Test</button>
         </div>
     )
 }

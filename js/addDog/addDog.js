@@ -14,14 +14,13 @@ function addDog({ addDog, dogProp }) {
             name: dogProps.name,
             race: dogProps.race,
             age: dogProps.age,
-            food: [
+            food: 
                 {
                     date: "",
                     time: "",
                     whatFood: "",
                     howMuch: ""
                 }
-            ]
         }
         addDog(dogValues)
     }

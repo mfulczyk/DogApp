@@ -1,32 +1,16 @@
 {
   "userDogs": [
     {
-      "id": 3,
-      "name": "Lusia",
-      "race": "pekinese",
-      "age": "4",
-      "food": [
-        {
-          "date": "test",
-          "time": "test2",
-          "whatFood": "test3",
-          "howMuch": "123"
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "name": "Miki",
-      "race": "mix",
-      "age": "18",
-      "food": [
-        {
-          "date": "",
-          "time": "",
-          "whatFood": "",
-          "howMuch": ""
-        }
-      ]
+      "id": 1,
+      "name": "mIKI",
+      "race": "affenpinscher",
+      "age": "123",
+      "food": {
+        "date": "2020-9-24",
+        "time": "19:37:20",
+        "whatFood": "wet dog food",
+        "howMuch": "123"
+      }
     }
   ],
   "dogs": {
