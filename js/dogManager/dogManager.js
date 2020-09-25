@@ -7,6 +7,8 @@ function dogManager() {
 
     const [dogBreed, setDogBreed] = useState([''])
     const [myDog, setMyDog] = useState([''])
+    const [myDogPhoto, setMyDogPhoto] = useState([''])
+
 
 
 
@@ -37,6 +39,13 @@ function dogManager() {
             .then(resp => resp.json())
             .then(dog => setMyDog(dog))
 
+    }
+
+    const fetchDogPhoto = (race) => {
+        fetch(`https://dog.ceo/api/breed/${race}/images/random`)
+        .then(resp => resp.json())
+        .then(photo => setMyDogPhoto(photo))
+    
     }
 
 
@@ -77,8 +86,7 @@ function dogManager() {
         <div>
             <AddDog addDog={addDog} dogProp={dogBreed} />
             <button className="btn btn-secondary" onClick={fetchMyDog}  >Moje Psy</button>
-            <ShowYourDogs fetchDogFood={fetchDogFood} handleDelete={deleteDog} myDogProp={myDog}/>
-            
+            <ShowYourDogs fetchDogPhoto={fetchDogPhoto} photoProp={myDogPhoto.message} fetchDogFood={fetchDogFood} handleDelete={deleteDog} myDogProp={myDog}/>
         </div>
     )
 }
