@@ -45,12 +45,14 @@ function dogManager() {
         fetch(`https://dog.ceo/api/breed/${race}/images/random`)
         .then(resp => resp.json())
         .then(photo => setMyDogPhoto(photo))
-    
+        //on to pobiera ze stanu z ktorego pobieraja wszystkie psy
+        //wrzucic to do jednego stanu na jednego psa
     }
 
 
     const [myTemporaryDog, setMyTempDog] = useState(['']);
 
+    // console.log(myDog, )
 
     const fetchDogFood = ( id, dogFoodValues  ) => {
 
@@ -58,15 +60,28 @@ function dogManager() {
             .then(resp => resp.json())
             .then(something => setMyTempDog(something))
 
+        const fDog = myDog.find(dog => dog.id === id);
+
+        console.log(fDog)
+
         fetch(`http://localhost:3000/userDogs/${id}`, {
             method: "PATCH",
             body: JSON.stringify({
-                food:{
-                    "date": dogFoodValues.food.date,
-                    "time": dogFoodValues.food.time,
-                    "whatFood": dogFoodValues.food.whatFood,
-                    "howMuch": dogFoodValues.food.howMuch
-                }
+                food: [
+                    ...fDog.food,
+                    {
+                        "date": dogFoodValues.food.date,
+                        "time": dogFoodValues.food.time,
+                        "whatFood": dogFoodValues.food.whatFood,
+                        "howMuch": dogFoodValues.food.howMuch
+                    }
+                ]
+                // food:{
+                //     "date": dogFoodValues.food.date,
+                //     "time": dogFoodValues.food.time,
+                //     "whatFood": dogFoodValues.food.whatFood,
+                //     "howMuch": dogFoodValues.food.howMuch
+                // }
                 }),
             headers: {
                 "Content-type": "application/json; charset=UTF-8"

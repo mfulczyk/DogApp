@@ -2,39 +2,43 @@
   "userDogs": [
     {
       "id": 1,
-      "name": "mIKI",
-      "race": "affenpinscher",
-      "age": "123",
-      "food": {
-        "date": "2020-9-25",
-        "time": "7:51:32",
-        "whatFood": "dry dog food",
-        "howMuch": "123"
-      }
+      "name": "Test",
+      "race": "mix",
+      "age": "12",
+      "food": [
+        {
+          "date": "2020-9-26",
+          "time": "15:44:52",
+          "whatFood": "wet dog food",
+          "howMuch": "123"
+        },
+        {
+          "date": "2020-9-26",
+          "time": "15:45:56",
+          "whatFood": "dry dog food",
+          "howMuch": "123123"
+        },
+        {
+          "date": "2020-9-26",
+          "time": "15:46:56",
+          "whatFood": "dry dog food",
+          "howMuch": "1234123"
+        }
+      ]
     },
     {
       "id": 2,
-      "name": "Kokos",
-      "race": "boxer",
+      "name": "test",
+      "race": "corgi",
       "age": "123",
-      "food": {
-        "date": "2020-9-24",
-        "time": "21:1:0",
-        "whatFood": "dry dog food",
-        "howMuch": "123"
-      }
+      "food": []
     },
     {
       "id": 3,
-      "name": "Piesek testowy",
-      "race": "corgi",
-      "age": "124",
-      "food": {
-        "date": "2020-9-25",
-        "time": "8:40:10",
-        "whatFood": "wet dog food",
-        "howMuch": "213"
-      }
+      "name": "12341",
+      "race": "bulldog",
+      "age": "123",
+      "food": []
     }
   ],
   "dogs": {
