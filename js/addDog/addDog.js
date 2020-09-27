@@ -11,16 +11,11 @@ function addDog({ addDog, dogProp }) {
         e.preventDefault();
         const dogValues = {
             id: "",
+            photo: "",
             name: dogProps.name,
             race: dogProps.race,
             age: dogProps.age,
             food: []
-                // {
-                //     date: "",
-                //     time: "",
-                //     whatFood: "",
-                //     howMuch: ""
-                // }
         }
         addDog(dogValues)
     }

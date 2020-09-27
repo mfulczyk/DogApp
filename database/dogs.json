@@ -2,43 +2,33 @@
   "userDogs": [
     {
       "id": 1,
-      "name": "Test",
-      "race": "mix",
-      "age": "12",
+      "photo": "https://images.dog.ceo/breeds/pekinese/n02086079_2766.jpg",
+      "name": "Lusie",
+      "race": "pekinese",
+      "age": "4",
       "food": [
         {
-          "date": "2020-9-26",
-          "time": "15:44:52",
-          "whatFood": "wet dog food",
-          "howMuch": "123"
-        },
-        {
-          "date": "2020-9-26",
-          "time": "15:45:56",
+          "date": "2020-9-27",
+          "time": "14:41:35",
           "whatFood": "dry dog food",
-          "howMuch": "123123"
-        },
-        {
-          "date": "2020-9-26",
-          "time": "15:46:56",
-          "whatFood": "dry dog food",
-          "howMuch": "1234123"
+          "howMuch": "124"
         }
       ]
     },
     {
       "id": 2,
-      "name": "test",
-      "race": "corgi",
-      "age": "123",
-      "food": []
-    },
-    {
-      "id": 3,
-      "name": "12341",
-      "race": "bulldog",
-      "age": "123",
-      "food": []
+      "photo": "https://images.dog.ceo/breeds/pitbull/IMG_20190826_121528_876.jpg",
+      "name": "Kokos",
+      "race": "pitbull",
+      "age": "5",
+      "food": [
+        {
+          "date": "2020-9-27",
+          "time": "14:41:47",
+          "whatFood": "wet dog food",
+          "howMuch": "15151"
+        }
+      ]
     }
   ],
   "dogs": {
