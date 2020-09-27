@@ -15,6 +15,7 @@ function addDog({ addDog, dogProp }) {
             name: dogProps.name,
             race: dogProps.race,
             age: dogProps.age,
+            vet: [],
             food: []
         }
         addDog(dogValues)

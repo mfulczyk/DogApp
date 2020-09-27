@@ -16,7 +16,6 @@ function dogFood({ fetchDogFood, testProps }) {
         const dogFoodValues = {
             food:
             {
-                id: "",
                 date: date,
                 time: time,
                 whatFood: food.whatFood,

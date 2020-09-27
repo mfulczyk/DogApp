@@ -1,13 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import DogFood from "../dogFood/dogFood"
+import VetVisit from "../vetVisit/vetVisit"
 
-function showYourDogs({ myDogProp, handleDelete, fetchDogFood, photoProp, fetchDogPhoto }) {
-    
-    useEffect(() => {
-            fetchDogPhoto("mix")
-        }, [])
-    
-
+function showYourDogs({ myDogProp, handleDelete, fetchDogFood, fetchDogPhoto, fetchVet }) {
 
 return (
     <div>
@@ -19,7 +14,7 @@ return (
             <p>Dog race: {el.race} </p>
             <button className="btn btn-danger" onClick={()=> handleDelete(el.id)}>Delete</button>
             <DogFood testProps={el.id} fetchDogFood={fetchDogFood}/>
-
+            <VetVisit testProps={el.id} fetchVet={fetchVet}/>
         </div>
         )}
     </div>

@@ -2,31 +2,40 @@
   "userDogs": [
     {
       "id": 1,
-      "photo": "https://images.dog.ceo/breeds/pekinese/n02086079_2766.jpg",
-      "name": "Lusie",
+      "photo": "https://images.dog.ceo/breeds/pekinese/n02086079_10932.jpg",
+      "name": "Lusia",
       "race": "pekinese",
-      "age": "4",
-      "food": [
-        {
-          "date": "2020-9-27",
-          "time": "14:41:35",
-          "whatFood": "dry dog food",
-          "howMuch": "124"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "photo": "https://images.dog.ceo/breeds/pitbull/IMG_20190826_121528_876.jpg",
-      "name": "Kokos",
-      "race": "pitbull",
       "age": "5",
+      "vet": [
+        {
+          "date": "2020-9-27",
+          "time": "21:48:38",
+          "whatFood": "Obicnanie pazurków"
+        },
+        {
+          "date": "2020-9-27",
+          "time": "21:48:57",
+          "whatFood": "Sranie w banie"
+        }
+      ],
       "food": [
         {
           "date": "2020-9-27",
-          "time": "14:41:47",
+          "time": "21:48:28",
           "whatFood": "wet dog food",
-          "howMuch": "15151"
+          "howMuch": "124"
+        },
+        {
+          "date": "2020-9-27",
+          "time": "21:48:47",
+          "whatFood": "wet dog food",
+          "howMuch": "124214"
+        },
+        {
+          "date": "2020-9-27",
+          "time": "21:48:59",
+          "whatFood": "wet dog food",
+          "howMuch": "124214"
         }
       ]
     }
