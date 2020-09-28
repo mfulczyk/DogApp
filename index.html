@@ -2,17 +2,25 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta content="ie=edge" http-equiv="X-UA-Compatible">
   <title>DogApp</title>
-  <script src="https://fer-api.coderslab.pl/bootstrap/js/index.js"></script>
-  <script>new CL({
-    title: "DogApp",
-    fontAwesome: true
-  });</script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-<main id="app" class="container mb-5"></main>
-<script src="build/out.js"></script>
+
+<!-- SEKCJA NAV -->
+  <nav class="navbar">
+    <div>LOGO</div>
+    <div>MY DOGS</div>
+    <DIV>FOOD HISTORY</DIV>
+    <div>VET HISTORY</div>
+  </nav>
+  <main id="app" class="container mb-5">
+    <button>ADD THE DOG</button>
+    <button>SHOW YOUR DOGS</button>
+  </main>
+  <script src="build/out.js"></script>
 </body>
 </html>

@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&display=swap");
+
+:root {
+    --A4: #D7FFF1;
+    --A3: #8CD790;
+    --A2: #77AF9C;
+    --A1: #285943;
+    --white: #FFFFFF;
+    --fontOS: "Oswald";
+    --font200: 200;
+    --font400: 400;
+    --font500: 500;
+    --font700: 700;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--fontOS);
+}
+
+/* sekcja nav */
+    
+.navbar {
+    font-weight: var(--font200);
+    height: 70px;
+    background-color: var(--A1);
+    color: var(--white);
+    font-size: 24px;
+}
+
+/* koniec sekcji nav */
+
+
+.test {
+
+    font-family: var(--fontOS);
+    font-weight: 200;
+}

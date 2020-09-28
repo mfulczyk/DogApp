@@ -2,7 +2,7 @@
   "userDogs": [
     {
       "id": 1,
-      "photo": "https://images.dog.ceo/breeds/pekinese/n02086079_10932.jpg",
+      "photo": "https://images.dog.ceo/breeds/pekinese/n02086079_2358.jpg",
       "name": "Lusia",
       "race": "pekinese",
       "age": "5",
@@ -36,8 +36,23 @@
           "time": "21:48:59",
           "whatFood": "wet dog food",
           "howMuch": "124214"
+        },
+        {
+          "date": "2020-9-28",
+          "time": "7:50:3",
+          "whatFood": "",
+          "howMuch": ""
         }
       ]
+    },
+    {
+      "id": 2,
+      "photo": "https://images.dog.ceo/breeds/mix/Annabelle11.jpeg",
+      "name": "Czonkers",
+      "race": "mix",
+      "age": "124",
+      "vet": [],
+      "food": []
     }
   ],
   "dogs": {

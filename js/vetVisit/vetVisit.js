@@ -27,8 +27,8 @@ function vetVisit({testProps, fetchVet}) {
 
     return (
         <>
-         <button >Vet Visit</button>
-         <form onSubmit={handleVet}>
+         <button className="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample">Vet Visit</button>
+         <form className="test" id="collapseExample" onSubmit={handleVet}>
              <input onChange={e => setVetValues({ vetDescription: e.target.value })} value={vetValues.vetDescription} placeholder="Visit description">
 
              </input>
