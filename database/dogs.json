@@ -2,55 +2,28 @@
   "userDogs": [
     {
       "id": 1,
-      "photo": "https://images.dog.ceo/breeds/pekinese/n02086079_2358.jpg",
-      "name": "Lusia",
-      "race": "pekinese",
-      "age": "5",
-      "vet": [
-        {
-          "date": "2020-9-27",
-          "time": "21:48:38",
-          "whatFood": "Obicnanie pazurków"
-        },
-        {
-          "date": "2020-9-27",
-          "time": "21:48:57",
-          "whatFood": "Sranie w banie"
-        }
-      ],
-      "food": [
-        {
-          "date": "2020-9-27",
-          "time": "21:48:28",
-          "whatFood": "wet dog food",
-          "howMuch": "124"
-        },
-        {
-          "date": "2020-9-27",
-          "time": "21:48:47",
-          "whatFood": "wet dog food",
-          "howMuch": "124214"
-        },
-        {
-          "date": "2020-9-27",
-          "time": "21:48:59",
-          "whatFood": "wet dog food",
-          "howMuch": "124214"
-        },
-        {
-          "date": "2020-9-28",
-          "time": "7:50:3",
-          "whatFood": "",
-          "howMuch": ""
-        }
-      ]
+      "photo": "https://images.dog.ceo/breeds/otterhound/n02091635_4368.jpg",
+      "name": "Keks",
+      "race": "otterhound",
+      "age": "12",
+      "vet": [],
+      "food": []
     },
     {
       "id": 2,
-      "photo": "https://images.dog.ceo/breeds/mix/Annabelle11.jpeg",
-      "name": "Czonkers",
-      "race": "mix",
-      "age": "124",
+      "photo": "https://images.dog.ceo/breeds/otterhound/n02091635_3941.jpg",
+      "name": "Keks",
+      "race": "otterhound",
+      "age": "12",
+      "vet": [],
+      "food": []
+    },
+    {
+      "id": 3,
+      "photo": "https://images.dog.ceo/breeds/otterhound/n02091635_1568.jpg",
+      "name": "Keks",
+      "race": "otterhound",
+      "age": "12",
       "vet": [],
       "food": []
     }
