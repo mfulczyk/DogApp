@@ -2,30 +2,57 @@
   "userDogs": [
     {
       "id": 1,
-      "photo": "https://images.dog.ceo/breeds/otterhound/n02091635_4368.jpg",
-      "name": "Keks",
-      "race": "otterhound",
+      "photo": "https://images.dog.ceo/breeds/akita/Akita_inu_blanc.jpg",
+      "name": "Kokos",
+      "race": "akita",
       "age": "12",
       "vet": [],
-      "food": []
+      "food": [
+        {
+          "date": "2020-9-29",
+          "time": "15:56:35",
+          "whatFood": "wet dog food",
+          "howMuch": "124"
+        }
+      ]
     },
     {
       "id": 2,
-      "photo": "https://images.dog.ceo/breeds/otterhound/n02091635_3941.jpg",
-      "name": "Keks",
-      "race": "otterhound",
-      "age": "12",
+      "photo": "https://images.dog.ceo/breeds/mix/Polo.jpg",
+      "name": "Miki",
+      "race": "mix",
+      "age": "5",
       "vet": [],
-      "food": []
+      "food": [
+        {
+          "date": "2020-9-29",
+          "time": "15:58:45",
+          "whatFood": "wet dog food",
+          "howMuch": "5000"
+        }
+      ]
     },
     {
       "id": 3,
-      "photo": "https://images.dog.ceo/breeds/otterhound/n02091635_1568.jpg",
-      "name": "Keks",
-      "race": "otterhound",
-      "age": "12",
+      "photo": "https://images.dog.ceo/breeds/chihuahua/n02085620_5312.jpg",
+      "name": "Lusia",
+      "race": "chihuahua",
+      "age": "155",
       "vet": [],
-      "food": []
+      "food": [
+        {
+          "date": "2020-9-29",
+          "time": "16:13:3",
+          "whatFood": "wet dog food",
+          "howMuch": "2000"
+        },
+        {
+          "date": "2020-9-29",
+          "time": "16:13:14",
+          "whatFood": "wet dog food",
+          "howMuch": "5"
+        }
+      ]
     }
   ],
   "dogs": {

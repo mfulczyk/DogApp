@@ -6,11 +6,20 @@ import FeedHistory from "../feedHistory/feedHistory"
 
 function dogManager() {
   const [dogBreed, setDogBreed] = useState([""]);
-  const [myDog, setMyDog] = useState([""]);
+  const [myDog, setMyDog] = useState([{age: "12",
+  food: [{}],
+  id: 1,
+  name: "Test",
+  photo: "https://images.dog.ceo/breeds/otterhound/n02091635_4368.jpg",
+  race: "otterhound",
+  vet: []}]);
+
 
   useEffect(() => {
-    fetchAllDogs(), fetchMyDog();
+    fetchMyDog(), fetchAllDogs() 
   }, []);
+
+
 
   const fetchAllDogs = () => {
     fetch(API_URL_BREEDS)
@@ -23,6 +32,7 @@ function dogManager() {
       .then((resp) => resp.json())
       .then((dog) => setMyDog(dog));
   };
+  
 
   const fetchDogPhoto = (race, id) => {
     let obj;
@@ -189,14 +199,14 @@ function dogManager() {
             aria-labelledby="headingThree"
             data-parent="#accordionExample"
           >
-            <FeedHistory/>
+            <FeedHistory myDogProp={myDog} />
           </div>
         </div>
         <div className="card">
           <div className="card-header" id="headingFour">
             <h2 className="mb-0">
               <button
-                class="btn btn-block text-left collapsed"
+                className="btn btn-block text-left collapsed"
                 type="button"
                 data-toggle="collapse"
                 data-target="#collapseFour"

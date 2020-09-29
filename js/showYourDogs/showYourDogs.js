@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react'
 import DogFood from "../dogFood/dogFood"
 import VetVisit from "../vetVisit/vetVisit"
 
-function showYourDogs({ myDogProp, handleDelete, fetchDogFood, fetchDogPhoto, fetchVet }) {
+function showYourDogs({ myDogProp, handleDelete, fetchDogFood, fetchDogPhoto, fetchVet, fetchMyDog }) {
 
+    
 return (
     <div>
         {myDogProp.map((el, index) => 
