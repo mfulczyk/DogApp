@@ -29,7 +29,6 @@ function dogFood({ fetchDogFood, testProps }) {
     }
     return (
         <>
-            <button className="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Feed</button>
             <form onSubmit={handleDogFoodSubmit}>
                 <select onChange={e => setFood({ ...food, whatFood: e.target.value })} style={{ display: "block" }} type="text" placeholder="Select race">
                     <option defaultValue={"Select your option"} hidden >Select your option</option>

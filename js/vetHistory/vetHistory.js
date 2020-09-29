@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function feedHistory({ myDogProp }) {
+function vetHistory({ myDogProp }) {
 
   return (
     <>
@@ -10,14 +10,13 @@ function feedHistory({ myDogProp }) {
           <div key={index}>
             <p>{el.name}</p>
             <div>
-              {el.food.map((el, index) => {
+              {el.vet.map((el, index) => {
                 return (
                   <ul key={index}>
-                    <p>Meal nr {index+1}</p>
-                    <li>{el.date}</li>
-                    <li>{el.time}</li>
-                    <li>{el.whatFood}</li>
-                    <li>{el.howMuch}g</li>
+                    <p>Vistit nr {index+1}</p>
+                    <li>Date - {el.date}</li>
+                    <li>Time - {el.time}</li>
+                    <li>Visit description - {el.vetDescription}g</li>
                   </ul>
                 );
               })}
@@ -28,5 +27,4 @@ function feedHistory({ myDogProp }) {
     </>
   );
 }
-
-export default feedHistory;
+export default vetHistory

@@ -16,7 +16,11 @@ return (
             <p>Dog race: {el.race} </p>
             <DogFood testProps={el.id} fetchDogFood={fetchDogFood}/>
             <VetVisit testProps={el.id} fetchVet={fetchVet}/>
-            <button className="btn btn-danger" onClick={()=> handleDelete(el.id)}>Delete</button>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button className="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample">Vet Visit</button>
+                <button className="btn btn-warning" type="button" style={{ display: "block" }}>Feed!</button>
+                <button className="btn btn-danger" type="button" onClick={()=> handleDelete(el.id)}>Delete</button>
+            </div>
         </div>
         )}
     </div>

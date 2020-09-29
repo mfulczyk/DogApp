@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&display=swap");
 
 :root {
-    --A4: #D7FFF1;
-    --A3: #8CD790;
-    --A2: #77AF9C;
-    --A1: #285943;
+    --Green: #3ec1d3;
+    --Yellow: #f6f7d7;
+    --Orange: #ff9a00;
+    --Red: #ff165d;
     --white: #FFFFFF;
     --fontOS: "Oswald";
     --font200: 200;
@@ -18,12 +18,16 @@
     font-family: var(--fontOS);
 }
 
+body {
+    background-color: var(--white);
+}
+
 /* sekcja nav */
     
 .navbar {
     font-weight: var(--font200);
     height: 70px;
-    background-color: var(--A1);
+    background-color: var(--Orange);
     color: var(--white);
     font-size: 24px;
 }
@@ -34,9 +38,43 @@
 
 /* koniec sekcji nav */
 
+/* GENERAL */
 
 .test {
 
     font-family: var(--fontOS);
     font-weight: 200;
+}
+
+#headingOne {
+    background-color: var(--Green)
+}
+
+#headingTwo {
+    background-color: var(--Green)
+}
+
+#headingThree {
+    background-color: var(--Green)
+}
+
+#headingFour {
+    background-color: var(--Green)
+}
+
+.btn-block {
+    color: black;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px){
+    .inputAddDog {
+        width: 100%;
+    }
+    
+    .selectAddDog {
+        width: 100%;
+    }
+
 }

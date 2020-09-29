@@ -17,28 +17,18 @@
       ]
     },
     {
-      "id": 2,
-      "photo": "https://images.dog.ceo/breeds/mix/Polo.jpg",
-      "name": "Miki",
-      "race": "mix",
-      "age": "5",
-      "vet": [],
-      "food": [
-        {
-          "date": "2020-9-29",
-          "time": "15:58:45",
-          "whatFood": "wet dog food",
-          "howMuch": "5000"
-        }
-      ]
-    },
-    {
       "id": 3,
       "photo": "https://images.dog.ceo/breeds/chihuahua/n02085620_5312.jpg",
       "name": "Lusia",
       "race": "chihuahua",
       "age": "155",
-      "vet": [],
+      "vet": [
+        {
+          "date": "2020-9-29",
+          "time": "16:30:10",
+          "vetDescription": "test"
+        }
+      ],
       "food": [
         {
           "date": "2020-9-29",
@@ -51,6 +41,12 @@
           "time": "16:13:14",
           "whatFood": "wet dog food",
           "howMuch": "5"
+        },
+        {
+          "date": "2020-9-29",
+          "time": "21:23:56",
+          "whatFood": "",
+          "howMuch": ""
         }
       ]
     }

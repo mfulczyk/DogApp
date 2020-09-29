@@ -2,24 +2,26 @@ import React, { useState, useEffect } from "react";
 import AddDog from "../addDog/addDog";
 import { API_URL_BREEDS, API_URL_USERDOGS } from "../variables/API";
 import ShowYourDogs from "../showYourDogs/showYourDogs";
-import FeedHistory from "../feedHistory/feedHistory"
+import FeedHistory from "../feedHistory/feedHistory";
+import VetHistory from "../vetHistory/vetHistory";
 
 function dogManager() {
   const [dogBreed, setDogBreed] = useState([""]);
-  const [myDog, setMyDog] = useState([{age: "12",
-  food: [{}],
-  id: 1,
-  name: "Test",
-  photo: "https://images.dog.ceo/breeds/otterhound/n02091635_4368.jpg",
-  race: "otterhound",
-  vet: []}]);
-
+  const [myDog, setMyDog] = useState([
+    {
+      age: "12",
+      food: [{}],
+      id: 1,
+      name: "Test",
+      photo: "https://images.dog.ceo/breeds/otterhound/n02091635_4368.jpg",
+      race: "otterhound",
+      vet: [],
+    },
+  ]);
 
   useEffect(() => {
-    fetchMyDog(), fetchAllDogs() 
+    fetchMyDog(), fetchAllDogs();
   }, []);
-
-
 
   const fetchAllDogs = () => {
     fetch(API_URL_BREEDS)
@@ -32,7 +34,6 @@ function dogManager() {
       .then((resp) => resp.json())
       .then((dog) => setMyDog(dog));
   };
-  
 
   const fetchDogPhoto = (race, id) => {
     let obj;
@@ -102,7 +103,7 @@ function dogManager() {
           {
             date: vetValues.vet.date,
             time: vetValues.vet.time,
-            whatFood: vetValues.vet.vetDescription,
+            vetDescription: vetValues.vet.vetDescription,
           },
         ],
       }),
@@ -223,18 +224,7 @@ function dogManager() {
             aria-labelledby="headingFour"
             data-parent="#accordionExample"
           >
-            <div className="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life
-              accusamus terry richardson ad squid. 3 wolf moon officia aute, non
-              cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-              laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-              on it squid single-origin coffee nulla assumenda shoreditch et.
-              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-              nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-              lomo. Leggings occaecat craft beer farm-to-table, raw denim
-              aesthetic synth nesciunt you probably haven't heard of them
-              accusamus labore sustainable VHS.
-            </div>
+            <VetHistory myDogProp={myDog} />
           </div>
         </div>
       </div>
