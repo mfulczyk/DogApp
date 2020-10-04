@@ -146,7 +146,8 @@ function dogManager() {
             aria-labelledby="headingOne"
             data-parent="#accordionExample"
           >
-            <ShowYourDogs
+            <ShowYourDogs 
+              
               fetchVet={fetchVet}
               fetchDogPhoto={fetchDogPhoto}
               fetchDogFood={fetchDogFood}

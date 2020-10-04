@@ -1,54 +1,40 @@
 {
   "userDogs": [
     {
-      "id": 1,
-      "photo": "https://images.dog.ceo/breeds/akita/Akita_inu_blanc.jpg",
-      "name": "Kokos",
-      "race": "akita",
-      "age": "12",
+      "id": 3,
+      "photo": "https://images.dog.ceo/breeds/spaniel-cocker/n02102318_8534.jpg",
+      "name": "Sernik",
+      "race": "spaniel",
+      "age": "2",
       "vet": [],
-      "food": [
-        {
-          "date": "2020-9-29",
-          "time": "15:56:35",
-          "whatFood": "wet dog food",
-          "howMuch": "124"
-        }
-      ]
+      "food": []
     },
     {
-      "id": 3,
-      "photo": "https://images.dog.ceo/breeds/chihuahua/n02085620_5312.jpg",
-      "name": "Lusia",
-      "race": "chihuahua",
-      "age": "155",
-      "vet": [
-        {
-          "date": "2020-9-29",
-          "time": "16:30:10",
-          "vetDescription": "test"
-        }
-      ],
-      "food": [
-        {
-          "date": "2020-9-29",
-          "time": "16:13:3",
-          "whatFood": "wet dog food",
-          "howMuch": "2000"
-        },
-        {
-          "date": "2020-9-29",
-          "time": "16:13:14",
-          "whatFood": "wet dog food",
-          "howMuch": "5"
-        },
-        {
-          "date": "2020-9-29",
-          "time": "21:23:56",
-          "whatFood": "",
-          "howMuch": ""
-        }
-      ]
+      "id": 4,
+      "photo": "https://images.dog.ceo/breeds/australian-shepherd/pepper2.jpg",
+      "name": "Miki",
+      "race": "australian",
+      "age": "23",
+      "vet": [],
+      "food": []
+    },
+    {
+      "id": 5,
+      "photo": "https://images.dog.ceo/breeds/australian-shepherd/leroy.jpg",
+      "name": "Miki",
+      "race": "australian",
+      "age": "23",
+      "vet": [],
+      "food": []
+    },
+    {
+      "id": 6,
+      "photo": "https://images.dog.ceo/breeds/australian-shepherd/sadie.jpg",
+      "name": "Miki",
+      "race": "australian",
+      "age": "23",
+      "vet": [],
+      "food": []
     }
   ],
   "dogs": {

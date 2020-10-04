@@ -26,15 +26,15 @@ function vetVisit({testProps, fetchVet}) {
     }
 
     return (
-        <>
+        
          
-         <form className="test" id="collapseExample" onSubmit={handleVet}>
-             <input onChange={e => setVetValues({ vetDescription: e.target.value })} value={vetValues.vetDescription} placeholder="Visit description">
+         <form className="test collapse" id={"vetNumber" + testProps} onSubmit={handleVet}>
+             <input className="form-control" onChange={e => setVetValues({ vetDescription: e.target.value })} value={vetValues.vetDescription} placeholder="Visit description">
 
              </input>
-             <button>Submit Visit</button>
+             <button className="btn btn-secondary" >Submit Visit</button>
          </form>   
-        </>
+        
     )
 }
 

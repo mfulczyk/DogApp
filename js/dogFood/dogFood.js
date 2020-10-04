@@ -28,19 +28,18 @@ function dogFood({ fetchDogFood, testProps }) {
 
     }
     return (
-        <>
-            <form onSubmit={handleDogFoodSubmit}>
-                <select onChange={e => setFood({ ...food, whatFood: e.target.value })} style={{ display: "block" }} type="text" placeholder="Select race">
+
+            <form className="test collapse" id={"feedNumber" + testProps} onSubmit={handleDogFoodSubmit}>
+                <select className="form-control" onChange={e => setFood({ ...food, whatFood: e.target.value })} style={{ display: "block", width: "100%"}} type="text" placeholder="Select race">
                     <option defaultValue={"Select your option"} hidden >Select your option</option>
                     <option value="dry dog food">Dry Dog Food</option>
                     <option value="wet dog food">Wet Dog Food</option>
                     <option value="wet dog food">BARF diet</option>
                 </select>
-                <input onChange={e => setFood({ ...food, howMuch: e.target.value })} type="number" placeholder="How many grams?"></input>
-                <button className="btn btn-warning" style={{ display: "block" }}>Feed the dog!</button>
+                <input className="form-control " onChange={e => setFood({ ...food, howMuch: e.target.value })} type="number" style={{ width: "100%"}} placeholder="How many grams?"></input>
+                <button className="btn btn-warning marginClass" style={{ display: "block", width: "100%"}}>Feed the dog!</button>
             </form>
 
-        </>
     )
 }
 
