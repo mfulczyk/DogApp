@@ -13,15 +13,15 @@ function feedHistory({ myDogProp }) {
             <div>
               {el.food.map((el, index) => {
                 return (
-                  <>
+                  <div key={index}>
                     <p>Meal nr {index+1}</p>
                       <ul key={index}>
-                        <li>{el.date}</li>
-                        <li>{el.time}</li>
-                        <li>{el.whatFood}</li>
-                        <li>{el.howMuch}g</li>
+                        <li><span className="fontello icon-calendar"></span>{el.date}</li>
+                        <li><span className="fontello icon-clock"></span>{el.time}</li>
+                        <li><span className="fontello icon-food"></span>{el.whatFood}</li>
+                        <li><span className="fontello icon-balance-scale"></span>{el.howMuch}g</li>
                       </ul>
-                  </>
+                  </div>
                   
                 );
               })}

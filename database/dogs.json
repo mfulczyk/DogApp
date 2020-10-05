@@ -2,11 +2,17 @@
   "userDogs": [
     {
       "id": 3,
-      "photo": "https://images.dog.ceo/breeds/spaniel-cocker/n02102318_9488.jpg",
+      "photo": "https://images.dog.ceo/breeds/spaniel-blenheim/n02086646_2778.jpg",
       "name": "Sernik",
       "race": "spaniel",
       "age": "2",
-      "vet": [],
+      "vet": [
+        {
+          "date": "2020-10-5",
+          "time": "21:20:0",
+          "vetDescription": "BlablaBla"
+        }
+      ],
       "food": [
         {
           "date": "2020-10-5",
@@ -24,7 +30,7 @@
     },
     {
       "id": 4,
-      "photo": "https://images.dog.ceo/breeds/australian-shepherd/sadie.jpg",
+      "photo": "https://images.dog.ceo/breeds/australian-shepherd/leroy.jpg",
       "name": "Miki",
       "race": "australian",
       "age": "23",
@@ -33,7 +39,7 @@
     },
     {
       "id": 5,
-      "photo": "https://images.dog.ceo/breeds/australian-shepherd/pepper.jpg",
+      "photo": "https://images.dog.ceo/breeds/australian-shepherd/pepper2.jpg",
       "name": "Miki",
       "race": "australian",
       "age": "23",
