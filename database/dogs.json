@@ -2,16 +2,29 @@
   "userDogs": [
     {
       "id": 3,
-      "photo": "https://images.dog.ceo/breeds/spaniel-cocker/n02102318_8534.jpg",
+      "photo": "https://images.dog.ceo/breeds/spaniel-cocker/n02102318_9488.jpg",
       "name": "Sernik",
       "race": "spaniel",
       "age": "2",
       "vet": [],
-      "food": []
+      "food": [
+        {
+          "date": "2020-10-5",
+          "time": "8:25:47",
+          "whatFood": "wet dog food",
+          "howMuch": "124"
+        },
+        {
+          "date": "2020-10-5",
+          "time": "8:31:13",
+          "whatFood": "dry dog food",
+          "howMuch": "12"
+        }
+      ]
     },
     {
       "id": 4,
-      "photo": "https://images.dog.ceo/breeds/australian-shepherd/pepper2.jpg",
+      "photo": "https://images.dog.ceo/breeds/australian-shepherd/sadie.jpg",
       "name": "Miki",
       "race": "australian",
       "age": "23",
@@ -20,16 +33,7 @@
     },
     {
       "id": 5,
-      "photo": "https://images.dog.ceo/breeds/australian-shepherd/leroy.jpg",
-      "name": "Miki",
-      "race": "australian",
-      "age": "23",
-      "vet": [],
-      "food": []
-    },
-    {
-      "id": 6,
-      "photo": "https://images.dog.ceo/breeds/australian-shepherd/sadie.jpg",
+      "photo": "https://images.dog.ceo/breeds/australian-shepherd/pepper.jpg",
       "name": "Miki",
       "race": "australian",
       "age": "23",

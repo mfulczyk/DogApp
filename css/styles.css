@@ -107,7 +107,7 @@ body {
     margin-bottom: 12px
 }
 
-div > div > p:nth-child(3):before {
+.raceText:before {
     content: "";
     display: inline-block;
     height: 20px;
@@ -139,14 +139,64 @@ div > div > p:nth-child(3):before {
     width: 250px; 
     object-fit: cover;
     border-radius: 4px;
-    filter: grayscale(0%);
-}
-
-.card-img-top:hover {
-    filter: grayscale(100%);
+    filter:blur(0) grayscale(0)
     
 }
 
+.imageWrapper {
+    height: 200px;
+}
+
+.imageWrapper:hover .card-img-top {
+    transition: 0.25s;
+    filter:blur(3px) grayscale(70%)
+}
+
+.hiddenImgDesc {
+    position:relative;
+    bottom:125px;
+    font-size: 1.65rem;
+    color: white;
+    font-weight: var(--font200);
+    left:0px;
+    text-align: center;
+    visibility: hidden;
+}
+
+.imageWrapper:hover .hiddenImgDesc {
+    transition: 1s;
+    visibility:visible;
+}
+
+.form-control {
+    margin: 4px 0 4px 0;
+    font-weight: var(--font200);
+}
+
+.form-control:focus {
+    border-color: white;
+    box-shadow :0 0 0 0.2rem var(--Green); ;
+}
+
+.btn-secondary {
+    margin-bottom: 5px;
+}
+
+.btn {
+    font-weight: var(--font500);
+    font-size: 1.2rem;
+}
+
+.feedHistoryWrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feedCard {
+    padding: 10px;
+    width: 50%;
+    margin: 10px;
+}
 
 /* MEDIA QUERIES */
 
