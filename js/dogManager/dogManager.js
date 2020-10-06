@@ -142,7 +142,7 @@ function dogManager() {
 
           <div
             id="collapseOne"
-            className="collapse"
+            className="collapse show"
             aria-labelledby="headingOne"
             data-parent="#accordionExample"
           >

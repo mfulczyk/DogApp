@@ -13,7 +13,7 @@ function vetHistory({ myDogProp }) {
                 <div>
                   {el.vet.map((el, index) => {
                     return (
-                      <ul key={index}>
+                      <ul className="card feedDiv" key={index}>
                         <p>Vistit nr {index+1}</p>
                         <li><span className="fontello icon-calendar"></span>{el.date}</li>
                         <li><span className="fontello icon-clock"></span>{el.time}</li>

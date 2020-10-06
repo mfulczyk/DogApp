@@ -13,8 +13,8 @@ function feedHistory({ myDogProp }) {
             <div>
               {el.food.map((el, index) => {
                 return (
-                  <div key={index}>
-                    <p>Meal nr {index+1}</p>
+                  <div className="card feedDiv" key={index}>
+                    <h5>Meal nr {index+1}</h5>
                       <ul key={index}>
                         <li><span className="fontello icon-calendar"></span>{el.date}</li>
                         <li><span className="fontello icon-clock"></span>{el.time}</li>

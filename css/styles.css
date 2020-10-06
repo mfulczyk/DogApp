@@ -3,11 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Elsie:wght@900&display=swap');
 
 :root {
-    --Green: #3ec1d3;
+    --Green: #6b9a52;
     --Yellow: #f6f7d7;
     --Orange: #ff9a00;
     --Gray: #a0a0a0;
-    --Red: #ff165d;
+    --Red: #E8766D;
     --white: #FFFFFF;
     --fontOS: "Oswald";
     --font200: 200;
@@ -24,7 +24,10 @@
 }
 
 body {
-    background-color: var(--white);
+    background-image: url("../assets/wall2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 /* sekcja nav */
@@ -194,12 +197,18 @@ body {
 
 .feedCard {
     padding: 10px;
-    width: 50%;
+    width: 90%;
     margin: 10px;
 }
 
 ul li {
     list-style: none;
+
+}
+
+ul {
+
+    padding-left: 0;
 }
 
 .fontello {
@@ -228,10 +237,10 @@ ul li {
     color: white;
 }
 
-.bigBtn:focus {
+/* .bigBtn:focus {
     transition: 0.5s;
     background-color: var(--Green);
-}
+} */
 
 .bigBtn:focus .card-header {
     transition: 0.5s;
@@ -244,6 +253,30 @@ ul li {
     margin-bottom: 0;
 }
 
+.addDogForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#fafafa;
+}
+
+.inputAge, .selectAddDog, .inputAddDog, #collapseTwo > form > button {
+    width: 95%;
+}
+
+#collapseTwo > form > button {
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+#collapseThree, #collapseFour {
+    background-color: #fafafa;
+}
+
+.feedDiv {
+    padding: 10px;
+    margin: 5px 0 5px 0;
+}
 
 /* MEDIA QUERIES */
 
@@ -264,12 +297,19 @@ ul li {
  }
 
 @media (max-width: 768px){
-    .inputAddDog {
-        width: 100%;
+    .inputAddDog, .selectAddDog, .inputAge, #collapseTwo > form > button  {
+        width: 90%;
+    }
+}
+
+@media (max-width: 530px){
+    .feedHistoryWrapper {
+        flex-direction: column;
+        align-items: center;
     }
     
-    .selectAddDog {
-        width: 100%;
+    .feedCard {
+        width: 90%;
     }
 
 }

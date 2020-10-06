@@ -2,7 +2,7 @@
   "userDogs": [
     {
       "id": 3,
-      "photo": "https://images.dog.ceo/breeds/spaniel-blenheim/n02086646_2778.jpg",
+      "photo": "https://images.dog.ceo/breeds/spaniel-blenheim/n02086646_1621.jpg",
       "name": "Sernik",
       "race": "spaniel",
       "age": "2",
@@ -27,24 +27,6 @@
           "howMuch": "12"
         }
       ]
-    },
-    {
-      "id": 4,
-      "photo": "https://images.dog.ceo/breeds/australian-shepherd/leroy.jpg",
-      "name": "Miki",
-      "race": "australian",
-      "age": "23",
-      "vet": [],
-      "food": []
-    },
-    {
-      "id": 5,
-      "photo": "https://images.dog.ceo/breeds/australian-shepherd/pepper2.jpg",
-      "name": "Miki",
-      "race": "australian",
-      "age": "23",
-      "vet": [],
-      "food": []
     }
   ],
   "dogs": {
