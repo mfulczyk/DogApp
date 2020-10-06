@@ -127,7 +127,7 @@ function dogManager() {
           <div className="card-header" id="headingOne">
             <h2 className="mb-0">
               <button
-                className="btn btn-block text-left collapsed"
+                className="bigBtn btn btn-block text-left collapsed"
                 type="button"
                 data-toggle="collapse"
                 data-target="#collapseOne"
@@ -135,7 +135,7 @@ function dogManager() {
                 aria-controls="collapseOne"
                 onClick={fetchMyDog}
               >
-                Show My Dogs!
+                MY DOGS!
               </button>
             </h2>
           </div>
@@ -160,14 +160,14 @@ function dogManager() {
           <div className="card-header" id="headingTwo">
             <h2 className="mb-0">
               <button
-                className="btn btn-block text-left collapsed"
+                className="bigBtn btn btn-block text-left collapsed"
                 type="button"
                 data-toggle="collapse"
                 data-target="#collapseTwo"
                 aria-expanded="false"
                 aria-controls="collapseTwo"
               >
-                Add Your Dog!
+                ADD YOUR DOG!
               </button>
             </h2>
           </div>
@@ -184,14 +184,14 @@ function dogManager() {
           <div className="card-header" id="headingThree">
             <h2 className="mb-0">
               <button
-                className="btn btn-block text-left collapsed"
+                className="bigBtn btn btn-block text-left collapsed"
                 type="button"
                 data-toggle="collapse"
                 data-target="#collapseThree"
                 aria-expanded="false"
                 aria-controls="collapseThree"
               >
-                Feed History
+                FEED HISTORY!
               </button>
             </h2>
           </div>
@@ -208,14 +208,14 @@ function dogManager() {
           <div className="card-header" id="headingFour">
             <h2 className="mb-0">
               <button
-                className="btn btn-block text-left collapsed"
+                className="bigBtn btn btn-block text-left collapsed"
                 type="button"
                 data-toggle="collapse"
                 data-target="#collapseFour"
                 aria-expanded="false"
                 aria-controls="collapseFour"
               >
-                Vet History
+                VET HISTORY!
               </button>
             </h2>
           </div>

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&display=swap");
 @import url("./fontello.css");
+@import url('https://fonts.googleapis.com/css2?family=Elsie:wght@900&display=swap');
 
 :root {
     --Green: #3ec1d3;
@@ -13,11 +14,13 @@
     --font400: 400;
     --font500: 500;
     --font700: 700;
+    --fontTI: "Elsie"
 }
 
 * {
     box-sizing: border-box;
     font-family: var(--fontOS);
+
 }
 
 body {
@@ -32,10 +35,6 @@ body {
     background-color: var(--Green);
     color: var(--white);
     font-size: 24px;
-}
-
-.testClass {
-    height: 100vh;
 }
 
 /* koniec sekcji nav */
@@ -206,6 +205,45 @@ ul li {
 .fontello {
     margin-right: 5px;
 }
+
+.bigBtn {
+    font-family: var(--fontOS);
+    font-weight: var(--font700);
+    font-size: 1.3rem;   
+}
+
+
+.card-header {
+    background-color: white !important;
+}
+
+.card-header:hover {
+    transition: 0.5s;
+    background-color: var(--Green) !important;
+    padding-left: 8px;
+}
+
+.card-header:hover .bigBtn {
+    transition: 0.5s;
+    color: white;
+}
+
+.bigBtn:focus {
+    transition: 0.5s;
+    background-color: var(--Green);
+}
+
+.bigBtn:focus .card-header {
+    transition: 0.5s;
+    background-color: var(--Green) !important;
+    padding-left: 8px;
+}
+
+.accordion>.card>.card-header {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
 
 /* MEDIA QUERIES */
 
