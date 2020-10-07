@@ -3,7 +3,6 @@ import DogFood from "../dogFood/dogFood"
 import VetVisit from "../vetVisit/vetVisit"
 
 function showYourDogs({ myDogProp, handleDelete, fetchDogFood, fetchDogPhoto, fetchVet, fetchMyDog }) {
-// do zmiennej idklasy i do niej sie odwolywac w hidden/collapse
     
 return (
     <div className="mainDiv" style={{backgroundColor: "#fafafa", margin: "0 auto"}}>

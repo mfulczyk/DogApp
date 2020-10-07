@@ -5,7 +5,7 @@
 :root {
     --Green: #6b9a52;
     --Yellow: #f6f7d7;
-    --Orange: #ff9a00;
+    --Orange: #ad6800;
     --Gray: #a0a0a0;
     --Red: #E8766D;
     --white: #FFFFFF;
@@ -91,11 +91,22 @@ body {
 
 .btn-danger {
     background-color: var(--Red);
+    border-color: var(--Red);
 }
 
 .btn-warning {
     background-color: var(--Orange);
+    border-color: var(--Orange);
+    color: white;
+
 }
+
+.btn-success {
+    background-color: var(--Green);
+    border-color: var(--Green);
+    color: white;
+}
+
 
 .card-title {
     margin-top: 0.25rem;
@@ -190,6 +201,14 @@ body {
     font-size: 1.2rem;
 }
 
+.feedBtn {
+    width: 100px;
+    align-self: flex-end;
+    font-weight: var(--font200);
+    font-size: 0.9rem;
+}
+
+
 .feedHistoryWrapper {
     display: flex;
     justify-content: space-around;
@@ -273,9 +292,66 @@ ul {
     background-color: #fafafa;
 }
 
-.feedDiv {
+.feedDiv, .vetDiv {
     padding: 10px;
     margin: 5px 0 5px 0;
+    position: relative;
+}
+
+.feedDiv::before, .vetDiv::before {
+    content: "";
+    display: block;
+    height: 60px;
+    width: 60px;
+    background-image: url("../assets/foodIcon.png");
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.navLogo::before {
+    content: "";
+    display: block;
+    height: 25px;
+    width: 25px;
+    background-image: url("../assets/bone.png");
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 10px);
+}
+
+.navLogo {
+    margin-left: 13px;
+}
+
+.vetDiv::before {
+    background-image: url("../assets/doctor.png");
+    background-size: 90%;
+    height: 50px;
+    width: 50px;
+    right: 5px;
+    top: 5px;
+}
+
+.card-title:before {
+    content: "";
+    display: block;
+    height: 25px;
+    width: 25px;
+    background-image: url("../assets/dog.png");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    position: absolute;
+    right: 3%;
+    top: 220px;
 }
 
 /* MEDIA QUERIES */

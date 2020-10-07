@@ -113,6 +113,31 @@ function dogManager() {
     }).then(fetchMyDog);
   };
 
+  const clearVet = (id) => {
+    fetch(`http://localhost:3000/userDogs/${id}`, {
+      method: "PATCH",
+      body: JSON.stringify({
+        vet: [],
+      }),
+      headers: {
+        "Content-type": "application/json; charset=UTF-8",
+      },
+    }).then(fetchMyDog);
+  };
+
+  const clearFeed = (id) => {
+    fetch(`http://localhost:3000/userDogs/${id}`, {
+      method: "PATCH",
+      body: JSON.stringify({
+        food: [],
+      }),
+      headers: {
+        "Content-type": "application/json; charset=UTF-8",
+      },
+    }).then(fetchMyDog);
+  };
+
+
   const deleteDog = (id) => {
     console.log("DELETE DOG WITH ID: ", id);
     fetch(`http://localhost:3000/userDogs/${id}`, {
@@ -201,7 +226,7 @@ function dogManager() {
             aria-labelledby="headingThree"
             data-parent="#accordionExample"
           >
-            <FeedHistory myDogProp={myDog} />
+            <FeedHistory clearFeed={clearFeed} myDogProp={myDog} />
           </div>
         </div>
         <div className="card">
@@ -225,7 +250,7 @@ function dogManager() {
             aria-labelledby="headingFour"
             data-parent="#accordionExample"
           >
-            <VetHistory myDogProp={myDog} />
+            <VetHistory clearVet={clearVet} myDogProp={myDog} />
           </div>
         </div>
       </div>

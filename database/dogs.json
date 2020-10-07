@@ -2,29 +2,38 @@
   "userDogs": [
     {
       "id": 3,
-      "photo": "https://images.dog.ceo/breeds/spaniel-blenheim/n02086646_1621.jpg",
+      "photo": "https://images.dog.ceo/breeds/spaniel-irish/n02102973_644.jpg",
       "name": "Sernik",
       "race": "spaniel",
       "age": "2",
       "vet": [
         {
-          "date": "2020-10-5",
-          "time": "21:20:0",
-          "vetDescription": "BlablaBla"
+          "date": "2020-10-7",
+          "time": "8:28:44",
+          "vetDescription": "Elo wale wiadro"
+        }
+      ],
+      "food": []
+    },
+    {
+      "id": 4,
+      "photo": "https://images.dog.ceo/breeds/terrier-bedlington/n02093647_3219.jpg",
+      "name": "Debil",
+      "race": "terrier",
+      "age": "5",
+      "vet": [
+        {
+          "date": "2020-10-7",
+          "time": "8:28:47",
+          "vetDescription": "Elo wale wiadro"
         }
       ],
       "food": [
         {
-          "date": "2020-10-5",
-          "time": "8:25:47",
-          "whatFood": "wet dog food",
-          "howMuch": "124"
-        },
-        {
-          "date": "2020-10-5",
-          "time": "8:31:13",
+          "date": "2020-10-7",
+          "time": "8:28:38",
           "whatFood": "dry dog food",
-          "howMuch": "12"
+          "howMuch": "145"
         }
       ]
     }
