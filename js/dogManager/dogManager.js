@@ -12,7 +12,7 @@ function dogManager() {
       age: "12",
       food: [{}],
       id: 1,
-      name: "Test",
+      name: "Leszek",
       photo: "https://images.dog.ceo/breeds/otterhound/n02091635_4368.jpg",
       race: "otterhound",
       vet: [],
@@ -41,7 +41,7 @@ function dogManager() {
       .then((resp) => resp.json())
       .then((photo) => (obj = photo.message))
       .then(() =>
-        fetch(`http://localhost:3000/userDogs/${id}`, {
+        fetch(`http://0.0.0.0:3000/userDogs/${id}`, {
           method: "PATCH",
           body: JSON.stringify({
             photo: obj,
@@ -74,7 +74,7 @@ function dogManager() {
 
   const fetchDogFood = (id, dogFoodValues) => {
     const fDog = myDog.find((dog) => dog.id === id);
-    fetch(`http://localhost:3000/userDogs/${id}`, {
+    fetch(`http://0.0.0.0/userDogs/${id}`, {
       method: "PATCH",
       body: JSON.stringify({
         food: [
@@ -95,7 +95,7 @@ function dogManager() {
 
   const fetchVet = (id, vetValues) => {
     const fDog = myDog.find((dog) => dog.id === id);
-    fetch(`http://localhost:3000/userDogs/${id}`, {
+    fetch(`http://0.0.0.0/userDogs/${id}`, {
       method: "PATCH",
       body: JSON.stringify({
         vet: [
@@ -114,7 +114,7 @@ function dogManager() {
   };
 
   const clearVet = (id) => {
-    fetch(`http://localhost:3000/userDogs/${id}`, {
+    fetch(`http://0.0.0.0/userDogs/${id}`, {
       method: "PATCH",
       body: JSON.stringify({
         vet: [],
@@ -126,7 +126,7 @@ function dogManager() {
   };
 
   const clearFeed = (id) => {
-    fetch(`http://localhost:3000/userDogs/${id}`, {
+    fetch(`http://0.0.0.0/userDogs/${id}`, {
       method: "PATCH",
       body: JSON.stringify({
         food: [],
@@ -140,7 +140,7 @@ function dogManager() {
 
   const deleteDog = (id) => {
     console.log("DELETE DOG WITH ID: ", id);
-    fetch(`http://localhost:3000/userDogs/${id}`, {
+    fetch(`http://0.0.0.0/userDogs/${id}`, {
       method: "DELETE",
     }).then(fetchMyDog);
   };

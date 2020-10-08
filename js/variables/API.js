@@ -1,5 +1,5 @@
-const API_URL_BREEDS="http://localhost:3000/dogs/"
-const API_URL_USERDOGS="http://localhost:3000/userDogs/"
+const API_URL_BREEDS="http://0.0.0.0/dogs/"
+const API_URL_USERDOGS="http://0.0.0.0/userDogs/"
 
 
 
