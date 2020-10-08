@@ -8,15 +8,6 @@
       "age": "2",
       "vet": [],
       "food": []
-    },
-    {
-      "id": 4,
-      "photo": "https://images.dog.ceo/breeds/terrier-bedlington/n02093647_3219.jpg",
-      "name": "Debil",
-      "race": "terrier",
-      "age": "5",
-      "vet": [],
-      "food": []
     }
   ],
   "dogs": {
