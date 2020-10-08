@@ -19,13 +19,14 @@ return (
                 <DogFood testProps={el.id} fetchDogFood={fetchDogFood}/>
                 <VetVisit testProps={el.id} fetchVet={fetchVet}/>
                 <div className="btn-group" role="group" aria-label="Basic example">
-                    <button className="btn btn-primary" type="button" data-toggle="collapse" data-target={"#vetNumber"+ el.id}>Vet Visit</button>
-                    <button className="btn btn-warning" type="button" data-toggle="collapse" data-target={"#feedNumber"+ el.id}style={{ display: "block" }}>Feed!</button>
+                    <button className="btn btn-primary" type="button" data-toggle="collapse" data-target={"#vetNumber"+ el.id}>Vet</button>
+                    <button className="btn btn-warning" type="button" data-toggle="collapse" data-target={"#feedNumber"+ el.id}style={{ display: "block" }}>Feed</button>
                     <button className="btn btn-danger" type="button" onClick={()=> handleDelete(el.id)}>Delete</button>
                 </div>
             </div>
         </div>
         )}
+        <a href="https://www.youtube.com/watch?v=LVrcfT9UMjw&ab_channel=Alcomindz" className="easterEgg"></a>
     </div>
 )
 }

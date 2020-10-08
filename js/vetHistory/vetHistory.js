@@ -14,7 +14,7 @@ function vetHistory({ myDogProp, clearVet }) {
                   {el.vet.map((el, index) => {
                     return (
                       <ul className="card vetDiv" key={index}>
-                        <h5>Vistit nr {index+1}</h5>
+                        <h5>Visit nr {index+1}</h5>
                         <li><span className="fontello icon-calendar"></span>{el.date}</li>
                         <li><span className="fontello icon-clock"></span>{el.time}</li>
                         <li><span className="fontello icon-pencil"></span>{el.vetDescription}</li>

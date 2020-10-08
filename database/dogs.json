@@ -6,13 +6,7 @@
       "name": "Sernik",
       "race": "spaniel",
       "age": "2",
-      "vet": [
-        {
-          "date": "2020-10-7",
-          "time": "8:28:44",
-          "vetDescription": "Elo wale wiadro"
-        }
-      ],
+      "vet": [],
       "food": []
     },
     {
@@ -21,21 +15,8 @@
       "name": "Debil",
       "race": "terrier",
       "age": "5",
-      "vet": [
-        {
-          "date": "2020-10-7",
-          "time": "8:28:47",
-          "vetDescription": "Elo wale wiadro"
-        }
-      ],
-      "food": [
-        {
-          "date": "2020-10-7",
-          "time": "8:28:38",
-          "whatFood": "dry dog food",
-          "howMuch": "145"
-        }
-      ]
+      "vet": [],
+      "food": []
     }
   ],
   "dogs": {
