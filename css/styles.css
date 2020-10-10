@@ -1,467 +1,459 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&display=swap");
 @import url("./fontello.css");
-@import url('https://fonts.googleapis.com/css2?family=Elsie:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Elsie:wght@900&display=swap");
 
 :root {
-    --Green: #6b9a52;
-    --Yellow: #f6f7d7;
-    --Orange: #ad6800;
-    --Gray: #a0a0a0;
-    --Red: #E8766D;
-    --white: #FFFFFF;
-    --fontOS: "Oswald";
-    --font200: 200;
-    --font400: 400;
-    --font500: 500;
-    --font700: 700;
-    --fontTI: "Elsie"
+  --Green: #6b9a52;
+  --Yellow: #f6f7d7;
+  --Orange: #ad6800;
+  --Gray: #a0a0a0;
+  --Red: #e8766d;
+  --white: #ffffff;
+  --fontOS: "Oswald";
+  --font200: 200;
+  --font400: 400;
+  --font500: 500;
+  --font700: 700;
+  --fontTI: "Elsie";
 }
 
 * {
-    box-sizing: border-box;
-    font-family: var(--fontOS);
-
+  box-sizing: border-box;
+  font-family: var(--fontOS);
 }
 
 body {
-    background-image: url("../assets/wall2.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+  background-image: url("../assets/wall2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 /* sekcja nav */
-    
+
 .navbar {
-    font-weight: var(--font200);
-    height: 70px;
-    background-color: var(--Green);
-    color: var(--white);
-    font-size: 24px;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-between;
+  font-weight: var(--font200);
+  height: 70px;
+  background-color: var(--Green);
+  color: var(--white);
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
 }
 
 .handlesHolder {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .round {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #343840;
-    margin: 3px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #343840;
+  margin: 3px;
 }
 
 .instagram {
-    background-image: url("../assets/instagram (1).svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 70%;
+  background-image: url("../assets/instagram (1).svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
 }
 
 .instagram:hover {
-    transition: 0.5s;
-    background-image: url("../assets/instagram.svg");
-    background-color: white;
+  transition: 0.5s;
+  background-image: url("../assets/instagram.svg");
+  background-color: white;
 }
 
 .facebook:hover {
-    transition: 0.5s;
-    background-image: url("../assets/facebook.svg");
-    background-color: white;
+  transition: 0.5s;
+  background-image: url("../assets/facebook.svg");
+  background-color: white;
 }
 
 .facebook {
-    background-image: url("../assets/facebook (1).svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 70%;
+  background-image: url("../assets/facebook (1).svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
 }
-
-
 
 /* koniec sekcji nav */
 
 /* GENERAL */
 
 .test {
-
-    font-family: var(--fontOS);
-    font-weight: 200;
+  font-family: var(--fontOS);
+  font-weight: 200;
 }
 
 #headingOne {
-    background-color: var(--Green)
+  background-color: var(--Green);
 }
 
 #headingTwo {
-    background-color: var(--Green)
+  background-color: var(--Green);
 }
 
 #headingThree {
-    background-color: var(--Green)
+  background-color: var(--Green);
 }
 
 #headingFour {
-    background-color: var(--Green)
+  background-color: var(--Green);
 }
 
 .btn-block {
-    color: black;
+  color: black;
 }
 
 .dogCard {
-    padding: 10px;
+  padding: 10px;
 }
 
 .card-body {
-    padding: 0;
+  padding: 0;
 }
 
 .btn-group {
-    width: 100%;
+  width: 100%;
 }
 
 .mainDiv {
-    background-color: #fafafa;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  background-color: #fafafa;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .btn-danger {
-    background-color: var(--Red);
-    border-color: var(--Red);
+  background-color: var(--Red);
+  border-color: var(--Red);
 }
 
 .easterEgg {
-    position: fixed;
-    height: 1px;
-    width: 1px;
-    right: 106px;
-    top: 394px;
-    background-color: black;
+  position: fixed;
+  height: 1px;
+  width: 1px;
+  right: 106px;
+  top: 394px;
+  background-color: black;
 }
 
 .btn-warning {
-    background-color: var(--Green);
-    border: none;
-    color: white
+  background-color: var(--Green);
+  border: none;
+  color: white;
 }
 
 .btn-warning:hover {
-    background-color: rgb(47, 97, 47);
-    transition: 0.35s;
-    color: white;
+  background-color: rgb(47, 97, 47);
+  transition: 0.35s;
+  color: white;
 }
 
 .btn-primary {
-    background-color: rgb(78, 131, 131);
-    border: none;
-    color: white;
+  background-color: rgb(78, 131, 131);
+  border: none;
+  color: white;
 }
 
 .btn-primary:hover {
-    background-color: darkslategrey;
-    transition: 0.35s;
-    color: white;
-    filter: grayscale(50%);
+  background-color: darkslategrey;
+  transition: 0.35s;
+  color: white;
+  filter: grayscale(50%);
 }
 
 .btn-success {
-    background-color: var(--Green);
-    border-color: var(--Green);
-    color: white;
+  background-color: var(--Green);
+  border-color: var(--Green);
+  color: white;
 }
 
-.btn-danger, .btn-primary, .btn-warning {
-    width: 50%;
+.btn-danger,
+.btn-primary,
+.btn-warning {
+  width: 50%;
 }
-
 
 .card-title {
-    margin-top: 0.25rem;
-    font-size: 2rem;
+  margin-top: 0.25rem;
+  font-size: 2rem;
 }
 
 .text {
-    width: 100%;
+  width: 100%;
 }
 
 .marginClass {
-    margin-bottom: 12px
+  margin-bottom: 12px;
 }
 
 .raceText:before {
-    content: "";
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-    background-color: white;
-    background-image: url("../assets/paw.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 18px;
-    margin-right: 4px;
+  content: "";
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  background-image: url("../assets/paw.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 18px;
+  margin-right: 4px;
 }
 
 .card-text {
-    margin-top: 0;
-    margin-bottom: 0.4rem;
-    font-size: 1.2rem;
-    font-weight: var(--font200);
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: var(--font200);
 }
 
 .dogCard {
-    size: 30%; 
-    display: inline-block; 
-    margin: 4px 4px;
-    
+  size: 30%;
+  display: inline-block;
+  margin: 4px 4px;
 }
 
 .card-img-top {
-    height: 200px; 
-    width: 250px; 
-    object-fit: cover;
-    border-radius: 4px;
-    filter:blur(0) grayscale(0)
-    
+  height: 200px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 4px;
+  filter: blur(0) grayscale(0);
 }
 
 .imageWrapper {
-    height: 200px;
+  height: 200px;
 }
 
 .imageWrapper:hover .card-img-top {
-    transition: 0.25s;
-    filter:blur(3px) grayscale(70%)
+  transition: 0.25s;
+  filter: blur(3px) grayscale(70%);
 }
 
 .hiddenImgDesc {
-    position:relative;
-    bottom:125px;
-    font-size: 1.65rem;
-    color: white;
-    font-weight: var(--font200);
-    left:0px;
-    text-align: center;
-    visibility: hidden;
+  position: relative;
+  bottom: 125px;
+  font-size: 1.65rem;
+  color: white;
+  font-weight: var(--font200);
+  left: 0px;
+  text-align: center;
+  visibility: hidden;
 }
 
 .imageWrapper:hover .hiddenImgDesc {
-    transition: 1s;
-    visibility:visible;
+  transition: 1s;
+  visibility: visible;
 }
 
 .form-control {
-    margin: 4px 0 4px 0;
-    font-weight: var(--font200);
+  margin: 4px 0 4px 0;
+  font-weight: var(--font200);
 }
 
 .form-control:focus {
-    border-color: white;
-    box-shadow :0 0 0 0.2rem var(--Green); ;
+  border-color: white;
+  box-shadow: 0 0 0 0.2rem var(--Green);
 }
 
 .btn-secondary {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .btn {
-    font-weight: var(--font500);
-    font-size: 1.2rem;
+  font-weight: var(--font500);
+  font-size: 1.2rem;
 }
 
 .feedBtn {
-    width: 100px;
-    align-self: flex-end;
-    font-weight: var(--font200);
-    font-size: 0.9rem;
+  width: 100px;
+  align-self: flex-end;
+  font-weight: var(--font200);
+  font-size: 0.9rem;
 }
 
-
 .feedHistoryWrapper {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .feedCard {
-    padding: 10px;
-    width: 90%;
-    margin: 10px;
+  padding: 10px;
+  width: 90%;
+  margin: 10px;
 }
 
 ul li {
-    list-style: none;
-
+  list-style: none;
 }
 
 ul {
-
-    padding-left: 0;
+  padding-left: 0;
 }
 
 .fontello {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .bigBtn {
-    font-family: var(--fontOS);
-    font-weight: var(--font700);
-    font-size: 1.3rem;   
+  font-family: var(--fontOS);
+  font-weight: var(--font700);
+  font-size: 1.3rem;
 }
 
-
 .card-header {
-    background-color: white !important;
+  background-color: white !important;
 }
 
 .card-header:hover {
-    transition: 0.5s;
-    background-color: var(--Green) !important;
-    padding-left: 8px;
+  transition: 0.5s;
+  background-color: var(--Green) !important;
+  padding-left: 8px;
 }
 
 .card-header:hover .bigBtn {
-    transition: 0.5s;
-    color: white;
+  transition: 0.5s;
+  color: white;
 }
-
-/* .bigBtn:focus {
-    transition: 0.5s;
-    background-color: var(--Green);
-} */
 
 .bigBtn:focus .card-header {
-    transition: 0.5s;
-    background-color: var(--Green) !important;
-    padding-left: 8px;
+  transition: 0.5s;
+  background-color: var(--Green) !important;
+  padding-left: 8px;
 }
 
-.accordion>.card>.card-header {
-    border-radius: 0;
-    margin-bottom: 0;
+.accordion > .card > .card-header {
+  border-radius: 0;
+  margin-bottom: 0;
 }
 
 .addDogForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color:#fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafa;
 }
 
-.inputAge, .selectAddDog, .inputAddDog, #collapseTwo > form > button {
-    width: 95%;
+.inputAge,
+.selectAddDog,
+.inputAddDog,
+#collapseTwo > form > button {
+  width: 95%;
 }
 
 #collapseTwo > form > button {
-    margin-bottom: 10px;
-    margin-top: 5px;
+  margin-bottom: 10px;
+  margin-top: 5px;
 }
 
-#collapseThree, #collapseFour {
-    background-color: #fafafa;
+#collapseThree,
+#collapseFour {
+  background-color: #fafafa;
 }
 
-.feedDiv, .vetDiv {
-    padding: 10px;
-    margin: 5px 0 5px 0;
-    position: relative;
+.feedDiv,
+.vetDiv {
+  padding: 10px;
+  margin: 5px 0 5px 0;
+  position: relative;
 }
 
-.feedDiv::before, .vetDiv::before {
-    content: "";
-    display: block;
-    height: 60px;
-    width: 60px;
-    background-image: url("../assets/foodIcon.png");
-    background-position: center;
-    background-size: contain;
-    border-radius: 50%;
-    position: absolute;
-    right: 0;
-    top: 0;
+.feedDiv::before,
+.vetDiv::before {
+  content: "";
+  display: block;
+  height: 60px;
+  width: 60px;
+  background-image: url("../assets/foodIcon.png");
+  background-position: center;
+  background-size: contain;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .navLogo::before {
-    content: "";
-    display: block;
-    height: 25px;
-    width: 25px;
-    background-image: url("../assets/bone.png");
-    background-position: center;
-    background-size: contain;
-    border-radius: 50%;
-    position: absolute;
-    left: 0;
-    top: calc(50% - 10px);
+  content: "";
+  display: block;
+  height: 25px;
+  width: 25px;
+  background-image: url("../assets/bone.png");
+  background-position: center;
+  background-size: contain;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 10px);
 }
 
 .navLogo {
-    margin-left: 13px;
+  margin-left: 13px;
 }
 
 .vetDiv::before {
-    background-image: url("../assets/doctor.png");
-    background-size: 90%;
-    height: 50px;
-    width: 50px;
-    right: 5px;
-    top: 5px;
+  background-image: url("../assets/doctor.png");
+  background-size: 90%;
+  height: 50px;
+  width: 50px;
+  right: 5px;
+  top: 5px;
 }
 
 .card-title:before {
-    content: "";
-    display: block;
-    height: 25px;
-    width: 25px;
-    background-image: url("../assets/dog.png");
-    background-position: center;
-    background-size: 90%;
-    background-repeat: no-repeat;
-    border-radius: 50%;
-    position: absolute;
-    right: 3%;
-    top: 220px;
+  content: "";
+  display: block;
+  height: 25px;
+  width: 25px;
+  background-image: url("../assets/dog.png");
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  position: absolute;
+  right: 3%;
+  top: 220px;
 }
 
 /* MEDIA QUERIES */
 
-@media (min-width: 1200px){
-   #app > div {
+@media (min-width: 1200px) {
+  #app > div {
     width: 1140px;
     margin: 0 auto;
+  }
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 880px;
+    margin: 0 auto;
+  }
 }
 
-@media (min-width: 992px) and (max-width: 1199px){
-    .container {
-     max-width: 880px;
-     margin: 0 auto;
- }
- 
- }
-
-@media (max-width: 768px){
-    .inputAddDog, .selectAddDog, .inputAge, #collapseTwo > form > button  {
-        width: 90%;
-    }
+@media (max-width: 768px) {
+  .inputAddDog,
+  .selectAddDog,
+  .inputAge,
+  #collapseTwo > form > button {
+    width: 90%;
+  }
 }
 
-@media (max-width: 530px){
-    .feedHistoryWrapper {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .feedCard {
-        width: 90%;
-    }
+@media (max-width: 530px) {
+  .feedHistoryWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .feedCard {
+    width: 90%;
+  }
 }

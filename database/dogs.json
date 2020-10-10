@@ -2,12 +2,59 @@
   "userDogs": [
     {
       "id": 3,
-      "photo": "https://images.dog.ceo/breeds/spaniel-irish/n02102973_644.jpg",
+      "photo": "https://images.dog.ceo/breeds/spaniel-blenheim/n02086646_1094.jpg",
       "name": "Sernik",
       "race": "spaniel",
       "age": "2",
-      "vet": [],
-      "food": []
+      "vet": [
+        {
+          "date": "2020-10-10",
+          "time": "9:32:24",
+          "vetDescription": "Przycinanie pazurków"
+        }
+      ],
+      "food": [
+        {
+          "date": "2020-10-10",
+          "time": "9:32:2",
+          "whatFood": "wet dog food",
+          "howMuch": "30"
+        },
+        {
+          "date": "2020-10-10",
+          "time": "12:8:31",
+          "whatFood": "wet dog food",
+          "howMuch": "12"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "photo": "https://images.dog.ceo/breeds/husky/n02110185_5159.jpg",
+      "name": "Kokos",
+      "race": "husky",
+      "age": "5",
+      "vet": [
+        {
+          "date": "2020-10-10",
+          "time": "9:32:22",
+          "vetDescription": "Szczepienie"
+        }
+      ],
+      "food": [
+        {
+          "date": "2020-10-10",
+          "time": "9:32:7",
+          "whatFood": "wet dog food",
+          "howMuch": "50"
+        },
+        {
+          "date": "2020-10-10",
+          "time": "12:8:36",
+          "whatFood": "wet dog food",
+          "howMuch": "50"
+        }
+      ]
     }
   ],
   "dogs": {

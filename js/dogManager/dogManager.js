@@ -6,8 +6,6 @@ import FeedHistory from "../feedHistory/feedHistory";
 import VetHistory from "../vetHistory/vetHistory";
 
 function dogManager() {
-
-  
   const [dogBreed, setDogBreed] = useState([""]);
   const [myDog, setMyDog] = useState([
     {
@@ -139,7 +137,6 @@ function dogManager() {
     }).then(fetchMyDog);
   };
 
-
   const deleteDog = (id) => {
     console.log("DELETE DOG WITH ID: ", id);
     fetch(`http://${SERVER}/userDogs/${id}`, {
@@ -173,8 +170,7 @@ function dogManager() {
             aria-labelledby="headingOne"
             data-parent="#accordionExample"
           >
-            <ShowYourDogs 
-              
+            <ShowYourDogs
               fetchVet={fetchVet}
               fetchDogPhoto={fetchDogPhoto}
               fetchDogFood={fetchDogFood}
