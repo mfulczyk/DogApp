@@ -10,12 +10,47 @@ function dogManager() {
   const [myDog, setMyDog] = useState([
     {
       age: "12",
-      food: [{}],
+      food: [
+        {
+          date: "01.12.2020",
+          time: "6:20",
+          whatFood: "dry food",
+          howMuch: "150g",
+        },
+      ],
       id: 1,
       name: "Leszek",
       photo: "https://images.dog.ceo/breeds/otterhound/n02091635_4368.jpg",
       race: "otterhound",
-      vet: [{}],
+      vet: [
+        {
+          date: "01.12.2020",
+          time: "6:20",
+          vetDescription: "Szczepienie wścieklizna",
+        },
+      ],
+    },
+    {
+      age: "4",
+      food: [
+        {
+          date: "01.12.2020",
+          time: "7:20",
+          whatFood: "wet food",
+          howMuch: "200g",
+        },
+      ],
+      id: 1,
+      name: "Kokos",
+      photo: "https://images.dog.ceo/breeds/beagle/n02088364_15690.jpg",
+      race: "beagle",
+      vet: [
+        {
+          date: "01.12.2020",
+          time: "6:20",
+          vetDescription: "Szczepienie parwowiroza",
+        },
+      ],
     },
   ]);
 

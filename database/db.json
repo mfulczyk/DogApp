@@ -1,11 +1,20 @@
 {
   "userDogs": [
     {
-      "id": 3,
-      "photo": "https://images.dog.ceo/breeds/spaniel-irish/n02102973_644.jpg",
-      "name": "Sernik",
-      "race": "spaniel",
-      "age": "2",
+      "id": 4,
+      "photo": "https://images.dog.ceo/breeds/terrier-fox/n02095314_2421.jpg",
+      "name": "Mango",
+      "race": "terrier",
+      "age": "0",
+      "vet": [],
+      "food": []
+    },
+    {
+      "id": 5,
+      "photo": "https://images.dog.ceo/breeds/mix/cookie.jpg",
+      "name": "Kokos",
+      "race": "mix",
+      "age": "0",
       "vet": [],
       "food": []
     }
